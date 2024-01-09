@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../CSS/Lagrange.css">
+
+	<script src="../node_modules/mathjax/es5/tex-mml-chtml.js"></script>
+	<script src="../node_modules/mathjs/lib/browser/math.js"></script>
+
+	<title>Lagrange</title>
+</head>
+
+<body>
+	<header>
+	</header>
+
+	<nav>
+		<div class="title">
+			<h1>
+				&lt Group 15 Lagrange Method Calculator &gt
+			</h1>
+		</div>
+
+		<div class="links">
+			<a href="../HTML/Lagrange.html">Lagrange</a>
+			<a href="../HTML/LagrangeDS.html">Lagrange Data Set</a>
+		</div>
+	</nav>
+
+	<main>
+		<section>
+			<p>This is a calculator that uses the Lagrange interpolation method to find the polynomial coefficient of given values and points.
+			</p>
+			<div class="inputs-container">
+				<template>
+					<div class="point">
+						<div class="point-decoration">
+							<input type="number" name="point-x" placeholder="x">
+						</div>
+						<div class="point-decoration">
+							<input type="number" name="point-y" placeholder="y">
+						</div>
+					</div>
+				</template>
+
+				<div class="inputs-container">
+					<div class="sub-container">
+						<div class="input-container">
+							<label for="x-value">$$x$$-value</label>
+							<div class="decoration">
+								<input type="number" name="x-value" class="x-value">
+							</div>
+						</div>
+						<div class="input-container">
+							<button class="solve-btn">Solve</button>
+						</div>
+					</div>
+					
+					<div class="input-container">
+						<label for="points-input">Number of inputs</label>
+						<select name="points-input" class="points-input">
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="final-answer-container"></div>
+		</section>
+
+		<section>
+			<div class="points-container"></div>
+		</section>
+	</main>
+
+	<footer>
+		<h2>Members</h2>
+
+		<div class="members">
+			<div class="member">
+				<h3>Berces, Arthur William</h3>
+			</div>
+
+			<div class="member">
+				<h3>Damasco, Vinard James</h3>
+			</div>
+
+			<div class="member">
+				<h3>Espiritu, Kyle Gabrielle</h3>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script src="../JavaScript/LagrangeDS.js"></script>
+
+</html>
